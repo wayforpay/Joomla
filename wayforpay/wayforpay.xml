@@ -14,26 +14,23 @@
         <filename plugin="wayforpay">WayForPay.cls.php</filename>
         <filename plugin="wayforpay">index.html</filename>
         <folder>language</folder>
-        <folder>assets</folder>
+        <folder>wayforpay/assets</folder>
     </files>
 
-    <vmconfig>
-        <fields name="params">
-            <fieldset name="payment"  addpath="/administrator/components/com_virtuemart/fields">
-                <field name="wayforpay_merchant_account" type="text" label="VMPAYMENT_WAYFORPAY_WAYFORPAY_MERCHANT"/>
-                <field name="wayforpay_secret_key" type="text" label="VMPAYMENT_WAYFORPAY_WAYFORPAY_SECRET_KEY"/>
+    <params addpath="/administrator/components/com_virtuemart/elements">
 
-                <field name="wayforpay_language" type="list" default="RU"
+        <param name="wayforpay_merchant_account" type="text" label="VMPAYMENT_WAYFORPAY_WAYFORPAY_MERCHANT"/>
+                <param name="wayforpay_secret_key" type="text" label="VMPAYMENT_WAYFORPAY_WAYFORPAY_SECRET_KEY"/>
+
+                <param name="wayforpay_language" type="list" default="RU"
                        label="VMPAYMENT_WAYFORPAY_WAYFORPAY_LANGUAGE">
                     <option value="RU">Русский</option>
                     <option value="EN">Английский</option>
                     <option value="UA">Украинский</option>
-                </field>
-                <field name="wayforpay_status_pending" type="vmorderstate" scope="com_virtuemart" default="P"
+                </param>
+                <param name="wayforpay_status_pending" type="vmorderstate" scope="com_virtuemart" default="P"
                        label="VMPAYMENT_WAYFORPAY_STATUS_PENDING"/>
-                <field name="wayforpay_status_success" type="vmorderstate" scope="com_virtuemart" default="P"
+                <param name="wayforpay_status_success" type="vmorderstate" scope="com_virtuemart" default="P"
                        label="VMPAYMENT_WAYFORPAY_STATUS_SUCCESS"/>
-            </fieldset>
-        </fields>
-    </vmconfig>
+        </params>
 </extension>
