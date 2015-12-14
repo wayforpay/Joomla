@@ -25,10 +25,6 @@ class plgVmPaymentWayforpay extends vmPSPlugin
         $this->_loggable = TRUE;
         $varsToPush = $this->getVarsToPush();
 
-        $varsToPush = array(
-            'paypal_merchant_email' => array('', 'char'),
-        );
-
         $this->setConfigParameterable($this->_configTableFieldName, $varsToPush);
 
     }
