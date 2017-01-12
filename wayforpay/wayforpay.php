@@ -88,7 +88,7 @@ class plgVmPaymentWayforpay extends vmPSPlugin
             'merchantTransactionSecureType' => 'AUTO',
             'orderDate' => strtotime($orderDetails->created_on),
             'amount' => round($orderDetails->order_total,2),
-            'currency' => 'UAH',
+            'currency' => $method->wayforpay_currency,
             'serviceUrl' => $serviceUrl,
             'returnUrl' => $returnUrl,
             'language' => strtoupper($lang)
