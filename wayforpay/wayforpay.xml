@@ -29,6 +29,10 @@
                     <option value="EN">Английский</option>
                     <option value="UA">Украинский</option>
                 </field>
+                <field name="wayforpay_currency" type="list" default="RU" label="VMPAYMENT_WAYFORPAY_WAYFORPAY_CURRENCY">
+                    <option value="UAH">Грн.</option>
+                    <option value="USD">Долл.США</option>
+                </field>
                 <field name="wayforpay_status_pending" type="vmorderstate" scope="com_virtuemart" default="P"
                        label="VMPAYMENT_WAYFORPAY_STATUS_PENDING"/>
                 <field name="wayforpay_status_success" type="vmorderstate" scope="com_virtuemart" default="P"
